@@ -31,3 +31,44 @@ code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #009966;
 }
+
+h2 {
+    color: #330066;
+    margin-top: 2em;
+    border-top: 1px #AAAAAA solid;
+    padding-top: 0.5em;
+}
+
+#uvod {
+    padding: 2em;
+    background-color: rgb(51, 0, 102, 0.1);
+}
+
+.slika {
+    border: red solid;
+    font-size: 0.9em;
+    width: 40%;
+    text-align: left;
+    float: right;
+    margin-left: 2em;
+}
+
+/* spodnje velja za "img", ki je v class "slika" */
+.slika img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.slika p {
+    margin-bottom: 0;
+}
+
+.slika p:last-child {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+a::before {
+    content: "⨠";
+}
