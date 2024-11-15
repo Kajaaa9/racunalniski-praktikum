@@ -38,6 +38,11 @@
    \end{table}
 }
 
+\newenvironment{dokaz}{
+   \begin{proof}[Dokaz izreka]
+   }{
+   \end{proof}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Prvi sklop nalog
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -242,7 +247,7 @@ in zato kvadrat ni normalen.
 \end{izrek}
 
 % okolje dokaz
-\begin{proof}[Dokaz izreka]
+\begin{dokaz}
       V normalnem magičnem kvadratu reda $n$ je vsota vseh nastopajočih
       števil (glej \eqref{eq:numbers} na strani \pageref{eq:numbers}) enaka  
          % pri enačbah za sklic uporabljamo \eqref, ne \ref; rabimo imeti \usepackage{amsmath}
@@ -250,7 +255,7 @@ in zato kvadrat ni normalen.
       $1+2+3+\dots+n^2=\sum_{k=1}^{n^2}k=\frac{1}{2}n^2(n^2+1)$. Ker imamo
       v kvadratu $n$ vrstic z enako vsoto, je vsota števil v eni vrstici
       enaka številu $\m$. % sklica: eq:numbers, eq:numbers
-\end{proof}
+\end{dokaz}
 
 Preprost račun pokaže, da je konstanti \eqref{eq:mc} analogna konstanta
 $\m(n;A,D)$ za magični kvadrat, v katerem so nameščena števila
@@ -274,7 +279,7 @@ komplementarni kvadrat, prikazan v tabeli \ref{ttable:closhu}.
 \end{magic}
 
 Vidimo, da je dobljeni kvadrat moč dobiti iz kvadrata Lo Shu tudi z zasukom za
-180 stopinj okrog središča, kvadrat iz tabele \ref{teble:table:mag3} pa je mogoče dobiti
+180 stopinj okrog središča, kvadrat iz tabele \ref{table:mag3} pa je mogoče dobiti
 iz kvadrata Lo Shu z zrcaljenjem preko sredinske vodoravne črte.
 
 Število različnih normalnih magičnih kvadratov
